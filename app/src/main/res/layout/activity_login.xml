@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/mayan_blue"
+    tools:context=".LoginActivity">
+
+    <!-- Toolbar -->
+    <include layout="@layout/action_bar_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/logo_add_foreground"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:contentDescription="Logo de la aplicación" />
+
+        <!-- Texto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona una Opción"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="40dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Botón de inicio de sesión -->
+        <Button
+            android:id="@+id/btnAuth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Ingrese con su Cuenta"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp" />
+
+        <!-- Botón de registro -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Registrarse Ahora"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
